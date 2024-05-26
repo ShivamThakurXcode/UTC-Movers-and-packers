@@ -1,0 +1,16 @@
+
+<section class="w-full max-h-min  -z-10  bg-[url('./assest/worker-loading.jpeg')] filter  bg-center bg-cover  py-5 ">
+<div class=" absolute w-screen h-screen backdrop-blur-xl bg-white/45 z-0 "></div>
+  <div class="container h-screen border-2 py-0 mx-auto z-10 w-screen border-red-900 grid items-center justify-around gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+    <div class="flex align-baseline justify-around">
+      <img
+        alt="About"
+        class="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover object-center sm:w-full"
+        height="650"
+        src="/dist/assest/car-loading.jpeg"
+        width="650"
+      />
+    </div>
+    </div>
+  </div>
+</section>

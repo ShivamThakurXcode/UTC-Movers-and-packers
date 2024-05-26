@@ -34,3 +34,35 @@ keenSliderNext.addEventListener('click', () => keenSlider.next())
 
 keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
 keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
+;
+
+
+const observer = new IntersectionObserver((entries) =>{
+  entries.forEach((entry) =>{
+    console.log(entry);
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+    }
+    else{
+      entry.target.classList.remove('show')
+    }
+
+
+ 
+  });
+});
+
+const hiddenElemenets = document.querySelectorAll('.box');
+
+
+hiddenElemenets.forEach((el) => observer.observe(el));
+
+
+
+const ContactContainer = document.querySelector('.call-container');
+
+const callBtn = document.querySelector('.contact');
+
+callBtn.addEventListener("click", () =>{
+  ContactContainer.classList.toggle('hidden');
+})

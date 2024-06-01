@@ -8,61 +8,43 @@
   <link rel="stylesheet" href="observer.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
- 
-  
+
+
   <title>UTC-Cargp</title>
 
 </head>
 
 <body>
 
-<!-- main container for whole page  -->
-<!-- Modal toggle -->
-<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-  Toggle modal
-</button>
+  <!-- Modal -->
+  <div id="modal"
+    class="modal text-center fixed inset-0 z-10 flex items-center justify-center bg-orange-900 bg-opacity-70 opacity-0 pointer-events-none">
+    <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all ease-in duration-100 max-w-lg w-full">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold mb-4">CONTACT TO UTC</h2>
+        <h4>Mobile Number</h4>
+      <span>  +91- 8448303511 <br>+91- 7023979643 <br>+91- 6376592970</span>
 
-<!-- Main modal -->
-<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-            <!-- Modal header -->
-            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    Terms of Service
-                </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
-            <!-- Modal body -->
-            <div class="p-4 md:p-5 space-y-4">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                </p>
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                </p>
-            </div>
-            <!-- Modal footer -->
-            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
-            </div>
-        </div>
+        <h4>Email</h4>
+        
+        <button id="closeModalButton" class="bg-orange-500 text-white px-4 py-2 mx-auto rounded-md">Close</button>
+      </div>
     </div>
-</div>
+  </div>
+  <!-- main container for whole page  -->
 
-  <div class="bg-white rounded-md  w-full h-full overflow-x-hidden">
+
+  <div class="bg-white rounded-md  w-full h-full overflow-y-hidden">
+
+
 
     <main>
 
-          <!-- home container  -->
-      <section  id="bgimage"
+
+
+
+      <!-- home container  -->
+      <section id="bgimage"
         class="  bg-[url('./assest/main.jpg')] bg-center bg-fixed bg-cover text-white h-screen min-w-fit bg-no-repeat object-contain  ral py-2">
 
         <header id="header" class="bg-[#f3f4f600] sticky   top-0 border-b-2 border-white w-11/12 mx-auto">
@@ -77,7 +59,8 @@
                 class="text-sm font-semibold text-[#ffffff]" href="#">CONTACT</a></nav>
             <div class="rounded-lg overflow-hidden focus:no-underline flex px-3 flex-nowrap border w-max bg-white/25">
               <input type="text" class="bg-transparent shrink px-2  " placeholder="Search"><i
-                class="ri-search-2-line"></i></div>
+                class="ri-search-2-line"></i>
+            </div>
           </div>
         </header>
         <div id="main-title" class="   container mx-auto grid grid-cols-2  gap-8">
@@ -95,7 +78,7 @@
                 SEAMLESS LOGISTCIS, EXPERT LOADING, AND <br>
                 METICULOUS PACKING.</p>
               <div id="title-button" class="flex  ">
-                <button class=" contact  items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-danger-foreground hover:bg-primary/90 h-10 px-4 py-1 w-28 border-2
+                <button id="openModalButton" for="tw-modal" class=" contact  items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-danger-foreground hover:bg-primary/90 h-10 px-4 py-1 w-28 border-2
                           flex justify-around">CALL
                   <i class="ri-phone-line scale-150 "></i></button>
                 <button
@@ -116,7 +99,12 @@
 
           </div>
         </div>
+
+
   </div>
+
+
+
   </section>
 
 
@@ -125,9 +113,15 @@
 
 
 
+  <section class="box bg-orange-50 ">
+
+
+
+
+  </section>
 
   <!-- about section  -->
-  
+
   <section class="box bg-orange-50 ">
     <div class="container px-6 py-10 mx-auto">
       <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl ">about us<br> awesome <span
@@ -223,37 +217,35 @@
   <!-- component -->
 
 
-<!-- ====== Services Section Start -->
-<section class="box pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
-   <div class="container mx-auto">
+  <!-- ====== Services Section Start -->
+  <section class="box pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
+    <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
-         <div class="w-full px-4">
-            <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-               <span class="font-semibold text-lg text-orange-400 mb-2 block">
-               Our Services
-               </span>
-               <h2
-                  class="
+        <div class="w-full px-4">
+          <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
+            <span class="font-semibold text-lg text-orange-400 mb-2 block">
+              Our Services
+            </span>
+            <h2 class="
                   font-bold
                   text-3xl
                   sm:text-4xl
                   md:text-[40px]
                   text-dark
                   mb-4
-                  "
-                  >
-                  What We Provide
-               </h2>
-               <p class="text-base text-body-color">
-                We offer a wide range of services to ensure your move is smooth and stress-free. From residential relocations to secure vehicle transportation, UTC Movers and Packers has you covered.
-               </p>
-            </div>
-         </div>
+                  ">
+              What We Provide
+            </h2>
+            <p class="text-base text-body-color">
+              We offer a wide range of services to ensure your move is smooth and stress-free. From residential
+              relocations to secure vehicle transportation, UTC Movers and Packers has you covered.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="flex flex-wrap -mx-4">
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div
-               class="
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
                p-10
                md:px-7
                xl:px-10
@@ -262,10 +254,8 @@
                shadow-md
                hover:shadow-lg
                mb-8
-               "
-               >
-               <div
-                  class="
+               ">
+            <div class="
                   w-[70px]
                   h-[70px]
                   flex
@@ -274,32 +264,23 @@
                   bg-orange-400
                   rounded-2xl
                   mb-8
-                  "
-                  >
-                  <svg
-                     width="32"
-                     height="32"
-                     viewBox="0 0 32 32"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                     >
-                     <path
-                        d="M18.6746 0.26779C10.0637 -1.33065 1.86522 4.39279 0.266779 13.0037C-0.506658 17.1803 0.421467 21.3568 2.79334 24.8631C5.21678 28.3693 8.82615 30.6897 12.9512 31.4631C13.9308 31.6178 14.859 31.7209 15.7871 31.7209C23.2637 31.7209 29.9668 26.3584 31.359 18.6756C32.9574 10.0647 27.234 1.81466 18.6746 0.26779ZM29.6574 18.3662C29.5543 18.8819 29.4512 19.449 29.2965 19.9131L16.7668 15.2209V1.81466C17.2824 1.86623 17.8496 1.91779 18.3652 2.02091C25.9449 3.4131 30.998 10.735 29.6574 18.3662ZM14.9105 1.81466V14.9115H1.86522C1.91678 14.3959 1.96834 13.8287 2.07147 13.3131C3.20584 6.86779 8.67147 2.22716 14.9105 1.81466ZM13.3121 29.6584C9.65115 28.9881 6.45428 26.9256 4.28865 23.8318C2.79334 21.7178 1.96834 19.2428 1.81365 16.7678H15.6324L28.5746 21.6147C26.048 27.3381 19.7574 30.8443 13.3121 29.6584Z"
-                        fill="white"
-                        />
-                  </svg>
-               </div>
-               <h4 class="font-semibold text-xl text-dark mb-3">
-                Vehicle Transportation
-               </h4>
-               <p class="text-body-color">
-                Secure transportation for cars and motorcycles, ensuring safe and timely delivery.
-               </p>
+                  ">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.6746 0.26779C10.0637 -1.33065 1.86522 4.39279 0.266779 13.0037C-0.506658 17.1803 0.421467 21.3568 2.79334 24.8631C5.21678 28.3693 8.82615 30.6897 12.9512 31.4631C13.9308 31.6178 14.859 31.7209 15.7871 31.7209C23.2637 31.7209 29.9668 26.3584 31.359 18.6756C32.9574 10.0647 27.234 1.81466 18.6746 0.26779ZM29.6574 18.3662C29.5543 18.8819 29.4512 19.449 29.2965 19.9131L16.7668 15.2209V1.81466C17.2824 1.86623 17.8496 1.91779 18.3652 2.02091C25.9449 3.4131 30.998 10.735 29.6574 18.3662ZM14.9105 1.81466V14.9115H1.86522C1.91678 14.3959 1.96834 13.8287 2.07147 13.3131C3.20584 6.86779 8.67147 2.22716 14.9105 1.81466ZM13.3121 29.6584C9.65115 28.9881 6.45428 26.9256 4.28865 23.8318C2.79334 21.7178 1.96834 19.2428 1.81365 16.7678H15.6324L28.5746 21.6147C26.048 27.3381 19.7574 30.8443 13.3121 29.6584Z"
+                  fill="white" />
+              </svg>
             </div>
-         </div>
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div
-               class="
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Vehicle Transportation
+            </h4>
+            <p class="text-body-color">
+              Secure transportation for cars and motorcycles, ensuring safe and timely delivery.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
                p-10
                md:px-7
                xl:px-10
@@ -308,10 +289,8 @@
                shadow-md
                hover:shadow-lg
                mb-8
-               "
-               >
-               <div
-                  class="
+               ">
+            <div class="
                   w-[70px]
                   h-[70px]
                   flex
@@ -320,23 +299,31 @@
                   bg-orange-400
                   rounded-2xl
                   mb-8
-                  "
-                  >
-                  <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 605 605.001" 
-                  height="50"
-                  xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M305.058,329.286V570.82l192.293-36.491V416.644c0-4.926,4.291-8.752,9.185-8.19l23.658,3.661 c4.162,0.478,7.305,4.001,7.305,8.19v136.717c0,3.885-2.713,7.243-6.512,8.061l-210.5,45.261 c-10.172,2.188-20.691,2.211-30.873,0.069L81.373,566.609c-3.738-0.786-6.446-4.037-6.545-7.854L71.23,419.907 c-0.112-4.354,3.181-8.046,7.521-8.427l176.886-15.543c3.068-0.269,5.73-2.226,6.902-5.074l26.648-64.716 C292.628,317.796,305.058,320.254,305.058,329.286z M69.23,250.204L13.721,368.855c-2.713,5.798,1.928,12.34,8.297,11.697 l208.464-21.064c2.946-0.298,5.505-2.152,6.707-4.858l67.075-151.111l-229.056,42.07C72.587,246.071,70.36,247.79,69.23,250.204z M304.264,203.518l70.976,155.837c1.24,2.723,3.859,4.561,6.842,4.801l208.069,16.732c6.271,0.505,10.773-5.916,8.163-11.64 L544.05,250.284c-1.122-2.46-3.38-4.213-6.041-4.692L304.264,203.518z M245.942,80.473l51.515,89.207 c3.967,6.869,13.882,6.868,17.848,0l51.504-89.207c3.967-6.87-0.991-15.457-8.923-15.457h-25.748v-54.71 C332.138,4.614,327.525,0,321.833,0h-30.914c-5.691,0-10.305,4.614-10.305,10.305v54.71h-25.749 C246.933,65.015,241.975,73.603,245.942,80.473z"></path> </g> </g></svg>
-               </div>
-               <h4 class="font-semibold text-xl text-dark mb-3">
-                Packing and Unpacking Services
-               </h4>
-               <p class="text-body-color">
-                Professional packing and unpacking to ensure your items are safely transported and easily settled.
-               </p>
+                  ">
+              <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 605 605.001" height="50" xml:space="preserve"
+                stroke="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M305.058,329.286V570.82l192.293-36.491V416.644c0-4.926,4.291-8.752,9.185-8.19l23.658,3.661 c4.162,0.478,7.305,4.001,7.305,8.19v136.717c0,3.885-2.713,7.243-6.512,8.061l-210.5,45.261 c-10.172,2.188-20.691,2.211-30.873,0.069L81.373,566.609c-3.738-0.786-6.446-4.037-6.545-7.854L71.23,419.907 c-0.112-4.354,3.181-8.046,7.521-8.427l176.886-15.543c3.068-0.269,5.73-2.226,6.902-5.074l26.648-64.716 C292.628,317.796,305.058,320.254,305.058,329.286z M69.23,250.204L13.721,368.855c-2.713,5.798,1.928,12.34,8.297,11.697 l208.464-21.064c2.946-0.298,5.505-2.152,6.707-4.858l67.075-151.111l-229.056,42.07C72.587,246.071,70.36,247.79,69.23,250.204z M304.264,203.518l70.976,155.837c1.24,2.723,3.859,4.561,6.842,4.801l208.069,16.732c6.271,0.505,10.773-5.916,8.163-11.64 L544.05,250.284c-1.122-2.46-3.38-4.213-6.041-4.692L304.264,203.518z M245.942,80.473l51.515,89.207 c3.967,6.869,13.882,6.868,17.848,0l51.504-89.207c3.967-6.87-0.991-15.457-8.923-15.457h-25.748v-54.71 C332.138,4.614,327.525,0,321.833,0h-30.914c-5.691,0-10.305,4.614-10.305,10.305v54.71h-25.749 C246.933,65.015,241.975,73.603,245.942,80.473z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
             </div>
-         </div>
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div
-          class="
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Packing and Unpacking Services
+            </h4>
+            <p class="text-body-color">
+              Professional packing and unpacking to ensure your items are safely transported and easily settled.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
           p-10
           md:px-7
           xl:px-10
@@ -345,10 +332,8 @@
           shadow-md
           hover:shadow-lg
           mb-8
-          "
-          >
-          <div
-             class="
+          ">
+            <div class="
              w-[70px]
              h-[70px]
              flex
@@ -357,32 +342,23 @@
              bg-orange-400
              rounded-2xl
              mb-8
-             "
-             >
-             <svg
-                width="35"
-                height="35"
-                viewBox="0 0 35 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                >
+             ">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                   d="M29.5312 21.6562L28.6563 21.1641L29.6953 20.5625C30.7344 19.9062 31.3359 18.8125 31.2812 17.6094C31.2266 16.4063 30.625 15.3125 29.5312 14.7109L27.8906 13.7813L29.6406 12.6875C30.6797 12.0313 31.2812 10.9375 31.2266 9.73438C31.1719 8.53125 30.5703 7.4375 29.4766 6.83594L19.25 1.09375C18.2109 0.492187 16.9531 0.546875 15.9141 1.09375L5.41406 7.21875C4.375 7.82031 3.71875 8.91406 3.71875 10.1172C3.71875 11.3203 4.375 12.4141 5.41406 13.0156L7.10938 14L5.41406 14.9844C4.375 15.5859 3.71875 16.6797 3.71875 17.8828C3.71875 19.0859 4.32031 20.1797 5.41406 20.7812L6.39844 21.3281L5.46875 21.875C4.42969 22.4766 3.77344 23.5703 3.77344 24.7734C3.77344 25.9766 4.375 27.0703 5.46875 27.6719L15.9141 33.6875C16.4609 34.0156 17.0078 34.125 17.6094 34.125C18.2109 34.125 18.8125 33.9609 19.3594 33.6328L29.6953 27.2891C30.7344 26.6328 31.3359 25.5391 31.2812 24.3359C31.2266 23.2969 30.625 22.2031 29.5312 21.6562ZM5.63281 10.1172C5.63281 9.57031 5.90625 9.13281 6.34375 8.85938L16.8438 2.78906C17.0625 2.67969 17.3359 2.57031 17.5547 2.57031C17.7734 2.57031 18.0469 2.625 18.2656 2.73437L28.5469 8.47656C28.9844 8.75 29.2578 9.1875 29.3125 9.73438C29.3125 10.2812 29.0391 10.7188 28.6016 10.9922L18.3203 17.3906C17.8828 17.6641 17.2812 17.6641 16.8438 17.3906L6.39844 11.375C5.90625 11.1562 5.63281 10.6641 5.63281 10.1172ZM5.63281 17.9375C5.63281 17.3906 5.90625 16.9531 6.34375 16.6797L9.02344 15.1484L15.8594 19.0859C16.4062 19.4141 16.9531 19.5234 17.5547 19.5234C18.1562 19.5234 18.7578 19.3594 19.3047 19.0312L26.0312 14.875L28.6016 16.2969C29.0391 16.5703 29.3125 17.0078 29.3672 17.5547C29.3672 18.1016 29.0938 18.5391 28.6563 18.8125L18.3203 25.2656C17.8828 25.5391 17.2812 25.5391 16.8438 25.2656L6.39844 19.25C5.90625 18.9766 5.63281 18.4844 5.63281 17.9375ZM28.6563 25.8125L18.3203 32.2109C17.8828 32.4844 17.2812 32.4844 16.8438 32.2109L6.39844 26.1953C5.96094 25.9219 5.6875 25.4844 5.6875 24.9375C5.6875 24.3906 5.96094 23.9531 6.39844 23.6797L8.3125 22.5859L15.8594 26.9609C16.4062 27.2891 16.9531 27.3984 17.5547 27.3984C18.1562 27.3984 18.7578 27.2344 19.3047 26.9062L26.7969 22.2578L28.6563 23.2969C29.0938 23.5703 29.3672 24.0078 29.4219 24.5547C29.3672 25.0469 29.0938 25.5391 28.6563 25.8125Z"
-                   fill="white"
-                   />
-             </svg>
+                  d="M29.5312 21.6562L28.6563 21.1641L29.6953 20.5625C30.7344 19.9062 31.3359 18.8125 31.2812 17.6094C31.2266 16.4063 30.625 15.3125 29.5312 14.7109L27.8906 13.7813L29.6406 12.6875C30.6797 12.0313 31.2812 10.9375 31.2266 9.73438C31.1719 8.53125 30.5703 7.4375 29.4766 6.83594L19.25 1.09375C18.2109 0.492187 16.9531 0.546875 15.9141 1.09375L5.41406 7.21875C4.375 7.82031 3.71875 8.91406 3.71875 10.1172C3.71875 11.3203 4.375 12.4141 5.41406 13.0156L7.10938 14L5.41406 14.9844C4.375 15.5859 3.71875 16.6797 3.71875 17.8828C3.71875 19.0859 4.32031 20.1797 5.41406 20.7812L6.39844 21.3281L5.46875 21.875C4.42969 22.4766 3.77344 23.5703 3.77344 24.7734C3.77344 25.9766 4.375 27.0703 5.46875 27.6719L15.9141 33.6875C16.4609 34.0156 17.0078 34.125 17.6094 34.125C18.2109 34.125 18.8125 33.9609 19.3594 33.6328L29.6953 27.2891C30.7344 26.6328 31.3359 25.5391 31.2812 24.3359C31.2266 23.2969 30.625 22.2031 29.5312 21.6562ZM5.63281 10.1172C5.63281 9.57031 5.90625 9.13281 6.34375 8.85938L16.8438 2.78906C17.0625 2.67969 17.3359 2.57031 17.5547 2.57031C17.7734 2.57031 18.0469 2.625 18.2656 2.73437L28.5469 8.47656C28.9844 8.75 29.2578 9.1875 29.3125 9.73438C29.3125 10.2812 29.0391 10.7188 28.6016 10.9922L18.3203 17.3906C17.8828 17.6641 17.2812 17.6641 16.8438 17.3906L6.39844 11.375C5.90625 11.1562 5.63281 10.6641 5.63281 10.1172ZM5.63281 17.9375C5.63281 17.3906 5.90625 16.9531 6.34375 16.6797L9.02344 15.1484L15.8594 19.0859C16.4062 19.4141 16.9531 19.5234 17.5547 19.5234C18.1562 19.5234 18.7578 19.3594 19.3047 19.0312L26.0312 14.875L28.6016 16.2969C29.0391 16.5703 29.3125 17.0078 29.3672 17.5547C29.3672 18.1016 29.0938 18.5391 28.6563 18.8125L18.3203 25.2656C17.8828 25.5391 17.2812 25.5391 16.8438 25.2656L6.39844 19.25C5.90625 18.9766 5.63281 18.4844 5.63281 17.9375ZM28.6563 25.8125L18.3203 32.2109C17.8828 32.4844 17.2812 32.4844 16.8438 32.2109L6.39844 26.1953C5.96094 25.9219 5.6875 25.4844 5.6875 24.9375C5.6875 24.3906 5.96094 23.9531 6.39844 23.6797L8.3125 22.5859L15.8594 26.9609C16.4062 27.2891 16.9531 27.3984 17.5547 27.3984C18.1562 27.3984 18.7578 27.2344 19.3047 26.9062L26.7969 22.2578L28.6563 23.2969C29.0938 23.5703 29.3672 24.0078 29.4219 24.5547C29.3672 25.0469 29.0938 25.5391 28.6563 25.8125Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Residential Moving
+            </h4>
+            <p class="text-body-color">
+              Safe, efficient home relocations with comprehensive packing and transportation services.
+            </p>
           </div>
-          <h4 class="font-semibold text-xl text-dark mb-3">
-           Residential Moving
-          </h4>
-          <p class="text-body-color">
-           Safe, efficient home relocations with comprehensive packing and transportation services.
-          </p>
-       </div>
-         </div>
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div
-               class="
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
                p-10
                md:px-7
                xl:px-10
@@ -391,10 +367,8 @@
                shadow-md
                hover:shadow-lg
                mb-8
-               "
-               >
-               <div
-                  class="
+               ">
+            <div class="
                   w-[70px]
                   h-[70px]
                   flex
@@ -403,23 +377,46 @@
                   bg-orange-400
                   rounded-2xl
                   mb-8
-                  "
-                  >
-                  
-<?xml version="1.0" ?><svg fill="none" height="35" viewBox="0 0 24 24" width="" Fill="white" xmlns="http://www.w3.org/2000/svg"><g id="Truck"><path  clip-rule="evenodd" d="M0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H14C14.4142 6.25 14.75 6.58579 14.75 7V16C14.75 16.4142 14.4142 16.75 14 16.75H9C8.58579 16.75 8.25 16.4142 8.25 16C8.25 15.5858 8.58579 15.25 9 15.25H13.25V7.75H1.75V15.25H5.5C5.91421 15.25 6.25 15.5858 6.25 16C6.25 16.4142 5.91421 16.75 5.5 16.75H1C0.585786 16.75 0.25 16.4142 0.25 16V7Z" fill="white" fill-rule="evenodd" id="Rectangle 20 (Stroke)"/><path clip-rule="evenodd" d="M15.25 7C15.25 6.58579 15.5858 6.25 16 6.25H20C20.2841 6.25 20.5438 6.4105 20.6708 6.66459L22.4997 10.3224C23.2227 10.5374 23.75 11.2071 23.75 12V16C23.75 16.4142 23.4142 16.75 23 16.75H21C20.5858 16.75 20.25 16.4142 20.25 16C20.25 15.5858 20.5858 15.25 21 15.25H22.25V12C22.25 11.8619 22.1381 11.75 22 11.75V11L21.3292 11.3354L19.5365 7.75H16.75V15.25H18C18.4142 15.25 18.75 15.5858 18.75 16C18.75 16.4142 18.4142 16.75 18 16.75H16C15.5858 16.75 15.25 16.4142 15.25 16V7Z" fill="white" fill-rule="evenodd" id="Rectangle 21 (Stroke)"/><path clip-rule="evenodd" d="M12.25 16C12.25 15.5858 12.5858 15.25 13 15.25H17C17.4142 15.25 17.75 15.5858 17.75 16C17.75 16.4142 17.4142 16.75 17 16.75H13C12.5858 16.75 12.25 16.4142 12.25 16Z" fill="white" fill-rule="evenodd" id="Vector 17 (Stroke)"/><path clip-rule="evenodd" d="M15.25 11C15.25 10.5858 15.5858 10.25 16 10.25L22 10.25C22.4142 10.25 22.75 10.5858 22.75 11C22.75 11.4142 22.4142 11.75 22 11.75L16 11.75C15.5858 11.75 15.25 11.4142 15.25 11Z" fill="white" fill-rule="evenodd" id="Vector 18 (Stroke)"/><path clip-rule="evenodd" d="M0.25 10C0.25 9.58579 0.585786 9.25 1 9.25H14C14.4142 9.25 14.75 9.58579 14.75 10C14.75 10.4142 14.4142 10.75 14 10.75H1C0.585786 10.75 0.25 10.4142 0.25 10Z" fill="white" fill-rule="evenodd" id="Vector 19 (Stroke)"/><path clip-rule="evenodd" d="M19.5 15.75C19.0858 15.75 18.75 16.0858 18.75 16.5C18.75 16.9142 19.0858 17.25 19.5 17.25C19.9142 17.25 20.25 16.9142 20.25 16.5C20.25 16.0858 19.9142 15.75 19.5 15.75ZM17.25 16.5C17.25 15.2574 18.2574 14.25 19.5 14.25C20.7426 14.25 21.75 15.2574 21.75 16.5C21.75 17.7426 20.7426 18.75 19.5 18.75C18.2574 18.75 17.25 17.7426 17.25 16.5Z" fill="white" fill-rule="evenodd" id="Ellipse 9 (Stroke)"/><path clip-rule="evenodd" d="M7.5 15.75C7.08579 15.75 6.75 16.0858 6.75 16.5C6.75 16.9142 7.08579 17.25 7.5 17.25C7.91421 17.25 8.25 16.9142 8.25 16.5C8.25 16.0858 7.91421 15.75 7.5 15.75ZM5.25 16.5C5.25 15.2574 6.25736 14.25 7.5 14.25C8.74264 14.25 9.75 15.2574 9.75 16.5C9.75 17.7426 8.74264 18.75 7.5 18.75C6.25736 18.75 5.25 17.7426 5.25 16.5Z" fill="white" fill-rule="evenodd" id="Ellipse 10 (Stroke)"/></g></svg>
- 
-               </div>
-               <h4 class="font-semibold text-xl text-dark mb-3">
-                Commercial Moving
-               </h4>
-               <p class="text-body-color">
-                Expert office and business relocations minimizing downtime and ensuring smooth transitions.
-               </p>
+                  ">
+
+              <?xml version="1.0" ?><svg fill="none" height="35" viewBox="0 0 24 24" width="" Fill="white"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Truck">
+                  <path clip-rule="evenodd"
+                    d="M0.25 7C0.25 6.58579 0.585786 6.25 1 6.25H14C14.4142 6.25 14.75 6.58579 14.75 7V16C14.75 16.4142 14.4142 16.75 14 16.75H9C8.58579 16.75 8.25 16.4142 8.25 16C8.25 15.5858 8.58579 15.25 9 15.25H13.25V7.75H1.75V15.25H5.5C5.91421 15.25 6.25 15.5858 6.25 16C6.25 16.4142 5.91421 16.75 5.5 16.75H1C0.585786 16.75 0.25 16.4142 0.25 16V7Z"
+                    fill="white" fill-rule="evenodd" id="Rectangle 20 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M15.25 7C15.25 6.58579 15.5858 6.25 16 6.25H20C20.2841 6.25 20.5438 6.4105 20.6708 6.66459L22.4997 10.3224C23.2227 10.5374 23.75 11.2071 23.75 12V16C23.75 16.4142 23.4142 16.75 23 16.75H21C20.5858 16.75 20.25 16.4142 20.25 16C20.25 15.5858 20.5858 15.25 21 15.25H22.25V12C22.25 11.8619 22.1381 11.75 22 11.75V11L21.3292 11.3354L19.5365 7.75H16.75V15.25H18C18.4142 15.25 18.75 15.5858 18.75 16C18.75 16.4142 18.4142 16.75 18 16.75H16C15.5858 16.75 15.25 16.4142 15.25 16V7Z"
+                    fill="white" fill-rule="evenodd" id="Rectangle 21 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M12.25 16C12.25 15.5858 12.5858 15.25 13 15.25H17C17.4142 15.25 17.75 15.5858 17.75 16C17.75 16.4142 17.4142 16.75 17 16.75H13C12.5858 16.75 12.25 16.4142 12.25 16Z"
+                    fill="white" fill-rule="evenodd" id="Vector 17 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M15.25 11C15.25 10.5858 15.5858 10.25 16 10.25L22 10.25C22.4142 10.25 22.75 10.5858 22.75 11C22.75 11.4142 22.4142 11.75 22 11.75L16 11.75C15.5858 11.75 15.25 11.4142 15.25 11Z"
+                    fill="white" fill-rule="evenodd" id="Vector 18 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M0.25 10C0.25 9.58579 0.585786 9.25 1 9.25H14C14.4142 9.25 14.75 9.58579 14.75 10C14.75 10.4142 14.4142 10.75 14 10.75H1C0.585786 10.75 0.25 10.4142 0.25 10Z"
+                    fill="white" fill-rule="evenodd" id="Vector 19 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M19.5 15.75C19.0858 15.75 18.75 16.0858 18.75 16.5C18.75 16.9142 19.0858 17.25 19.5 17.25C19.9142 17.25 20.25 16.9142 20.25 16.5C20.25 16.0858 19.9142 15.75 19.5 15.75ZM17.25 16.5C17.25 15.2574 18.2574 14.25 19.5 14.25C20.7426 14.25 21.75 15.2574 21.75 16.5C21.75 17.7426 20.7426 18.75 19.5 18.75C18.2574 18.75 17.25 17.7426 17.25 16.5Z"
+                    fill="white" fill-rule="evenodd" id="Ellipse 9 (Stroke)" />
+                  <path clip-rule="evenodd"
+                    d="M7.5 15.75C7.08579 15.75 6.75 16.0858 6.75 16.5C6.75 16.9142 7.08579 17.25 7.5 17.25C7.91421 17.25 8.25 16.9142 8.25 16.5C8.25 16.0858 7.91421 15.75 7.5 15.75ZM5.25 16.5C5.25 15.2574 6.25736 14.25 7.5 14.25C8.74264 14.25 9.75 15.2574 9.75 16.5C9.75 17.7426 8.74264 18.75 7.5 18.75C6.25736 18.75 5.25 17.7426 5.25 16.5Z"
+                    fill="white" fill-rule="evenodd" id="Ellipse 10 (Stroke)" />
+                </g>
+              </svg>
+
             </div>
-         </div>
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div
-               class="
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Commercial Moving
+            </h4>
+            <p class="text-body-color">
+              Expert office and business relocations minimizing downtime and ensuring smooth transitions.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
                p-10
                md:px-7
                xl:px-10
@@ -428,10 +425,8 @@
                shadow-md
                hover:shadow-lg
                mb-8
-               "
-               >
-               <div
-                  class="
+               ">
+            <div class="
                   w-[70px]
                   h-[70px]
                   flex
@@ -440,32 +435,23 @@
                   bg-orange-400
                   rounded-2xl
                   mb-8
-                  "
-                  >
-                  <svg
-                     width="35"
-                     height="35"
-                     viewBox="0 0 35 35"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                     >
-                     <path
-                        d="M29.5312 21.6562L28.6563 21.1641L29.6953 20.5625C30.7344 19.9062 31.3359 18.8125 31.2812 17.6094C31.2266 16.4063 30.625 15.3125 29.5312 14.7109L27.8906 13.7813L29.6406 12.6875C30.6797 12.0313 31.2812 10.9375 31.2266 9.73438C31.1719 8.53125 30.5703 7.4375 29.4766 6.83594L19.25 1.09375C18.2109 0.492187 16.9531 0.546875 15.9141 1.09375L5.41406 7.21875C4.375 7.82031 3.71875 8.91406 3.71875 10.1172C3.71875 11.3203 4.375 12.4141 5.41406 13.0156L7.10938 14L5.41406 14.9844C4.375 15.5859 3.71875 16.6797 3.71875 17.8828C3.71875 19.0859 4.32031 20.1797 5.41406 20.7812L6.39844 21.3281L5.46875 21.875C4.42969 22.4766 3.77344 23.5703 3.77344 24.7734C3.77344 25.9766 4.375 27.0703 5.46875 27.6719L15.9141 33.6875C16.4609 34.0156 17.0078 34.125 17.6094 34.125C18.2109 34.125 18.8125 33.9609 19.3594 33.6328L29.6953 27.2891C30.7344 26.6328 31.3359 25.5391 31.2812 24.3359C31.2266 23.2969 30.625 22.2031 29.5312 21.6562ZM5.63281 10.1172C5.63281 9.57031 5.90625 9.13281 6.34375 8.85938L16.8438 2.78906C17.0625 2.67969 17.3359 2.57031 17.5547 2.57031C17.7734 2.57031 18.0469 2.625 18.2656 2.73437L28.5469 8.47656C28.9844 8.75 29.2578 9.1875 29.3125 9.73438C29.3125 10.2812 29.0391 10.7188 28.6016 10.9922L18.3203 17.3906C17.8828 17.6641 17.2812 17.6641 16.8438 17.3906L6.39844 11.375C5.90625 11.1562 5.63281 10.6641 5.63281 10.1172ZM5.63281 17.9375C5.63281 17.3906 5.90625 16.9531 6.34375 16.6797L9.02344 15.1484L15.8594 19.0859C16.4062 19.4141 16.9531 19.5234 17.5547 19.5234C18.1562 19.5234 18.7578 19.3594 19.3047 19.0312L26.0312 14.875L28.6016 16.2969C29.0391 16.5703 29.3125 17.0078 29.3672 17.5547C29.3672 18.1016 29.0938 18.5391 28.6563 18.8125L18.3203 25.2656C17.8828 25.5391 17.2812 25.5391 16.8438 25.2656L6.39844 19.25C5.90625 18.9766 5.63281 18.4844 5.63281 17.9375ZM28.6563 25.8125L18.3203 32.2109C17.8828 32.4844 17.2812 32.4844 16.8438 32.2109L6.39844 26.1953C5.96094 25.9219 5.6875 25.4844 5.6875 24.9375C5.6875 24.3906 5.96094 23.9531 6.39844 23.6797L8.3125 22.5859L15.8594 26.9609C16.4062 27.2891 16.9531 27.3984 17.5547 27.3984C18.1562 27.3984 18.7578 27.2344 19.3047 26.9062L26.7969 22.2578L28.6563 23.2969C29.0938 23.5703 29.3672 24.0078 29.4219 24.5547C29.3672 25.0469 29.0938 25.5391 28.6563 25.8125Z"
-                        fill="white"
-                        />
-                  </svg>
-               </div>
-               <h4 class="font-semibold text-xl text-dark mb-3">
-                Residential Moving
-               </h4>
-               <p class="text-body-color">
-                Safe, efficient home relocations with comprehensive packing and transportation services.
-               </p>
+                  ">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M29.5312 21.6562L28.6563 21.1641L29.6953 20.5625C30.7344 19.9062 31.3359 18.8125 31.2812 17.6094C31.2266 16.4063 30.625 15.3125 29.5312 14.7109L27.8906 13.7813L29.6406 12.6875C30.6797 12.0313 31.2812 10.9375 31.2266 9.73438C31.1719 8.53125 30.5703 7.4375 29.4766 6.83594L19.25 1.09375C18.2109 0.492187 16.9531 0.546875 15.9141 1.09375L5.41406 7.21875C4.375 7.82031 3.71875 8.91406 3.71875 10.1172C3.71875 11.3203 4.375 12.4141 5.41406 13.0156L7.10938 14L5.41406 14.9844C4.375 15.5859 3.71875 16.6797 3.71875 17.8828C3.71875 19.0859 4.32031 20.1797 5.41406 20.7812L6.39844 21.3281L5.46875 21.875C4.42969 22.4766 3.77344 23.5703 3.77344 24.7734C3.77344 25.9766 4.375 27.0703 5.46875 27.6719L15.9141 33.6875C16.4609 34.0156 17.0078 34.125 17.6094 34.125C18.2109 34.125 18.8125 33.9609 19.3594 33.6328L29.6953 27.2891C30.7344 26.6328 31.3359 25.5391 31.2812 24.3359C31.2266 23.2969 30.625 22.2031 29.5312 21.6562ZM5.63281 10.1172C5.63281 9.57031 5.90625 9.13281 6.34375 8.85938L16.8438 2.78906C17.0625 2.67969 17.3359 2.57031 17.5547 2.57031C17.7734 2.57031 18.0469 2.625 18.2656 2.73437L28.5469 8.47656C28.9844 8.75 29.2578 9.1875 29.3125 9.73438C29.3125 10.2812 29.0391 10.7188 28.6016 10.9922L18.3203 17.3906C17.8828 17.6641 17.2812 17.6641 16.8438 17.3906L6.39844 11.375C5.90625 11.1562 5.63281 10.6641 5.63281 10.1172ZM5.63281 17.9375C5.63281 17.3906 5.90625 16.9531 6.34375 16.6797L9.02344 15.1484L15.8594 19.0859C16.4062 19.4141 16.9531 19.5234 17.5547 19.5234C18.1562 19.5234 18.7578 19.3594 19.3047 19.0312L26.0312 14.875L28.6016 16.2969C29.0391 16.5703 29.3125 17.0078 29.3672 17.5547C29.3672 18.1016 29.0938 18.5391 28.6563 18.8125L18.3203 25.2656C17.8828 25.5391 17.2812 25.5391 16.8438 25.2656L6.39844 19.25C5.90625 18.9766 5.63281 18.4844 5.63281 17.9375ZM28.6563 25.8125L18.3203 32.2109C17.8828 32.4844 17.2812 32.4844 16.8438 32.2109L6.39844 26.1953C5.96094 25.9219 5.6875 25.4844 5.6875 24.9375C5.6875 24.3906 5.96094 23.9531 6.39844 23.6797L8.3125 22.5859L15.8594 26.9609C16.4062 27.2891 16.9531 27.3984 17.5547 27.3984C18.1562 27.3984 18.7578 27.2344 19.3047 26.9062L26.7969 22.2578L28.6563 23.2969C29.0938 23.5703 29.3672 24.0078 29.4219 24.5547C29.3672 25.0469 29.0938 25.5391 28.6563 25.8125Z"
+                  fill="white" />
+              </svg>
             </div>
-         </div>
-         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div
-               class="
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Residential Moving
+            </h4>
+            <p class="text-body-color">
+              Safe, efficient home relocations with comprehensive packing and transportation services.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+          <div class="
                p-10
                md:px-7
                xl:px-10
@@ -474,10 +460,8 @@
                shadow-md
                hover:shadow-lg
                mb-8
-               "
-               >
-               <div
-                  class="
+               ">
+            <div class="
                   w-[70px]
                   h-[70px]
                   flex
@@ -486,37 +470,28 @@
                   bg-orange-400
                   rounded-2xl
                   mb-8
-                  "
-                  >
-                  <svg
-                     width="35"
-                     height="35"
-                     viewBox="0 0 35 35"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                     >
-                     <path
-                        d="M4.04684 15.5859C4.2109 15.5859 4.37497 15.5859 4.48434 15.5313L10.5547 13.3984C11.0468 13.2344 11.3203 12.6875 11.1562 12.1953C10.9922 11.7031 10.4453 11.4297 9.95309 11.5938L6.28903 12.9063C8.09372 7.92969 12.8515 4.53906 18.375 4.53906C24.2265 4.53906 29.3672 8.42188 30.789 14.0547C30.8984 14.5469 31.4453 14.875 31.9375 14.7656C32.4297 14.6563 32.7578 14.1094 32.6484 13.6172C31.0078 7.16406 25.1015 2.67969 18.375 2.67969C11.8125 2.67969 6.12497 6.89063 4.26559 13.0156L2.57028 8.25781C2.40622 7.76563 1.85934 7.49219 1.36715 7.65625C0.874967 7.82031 0.60153 8.36719 0.765592 8.85938L2.84372 14.8203C3.00778 15.2578 3.55465 15.5859 4.04684 15.5859Z"
-                        fill="white"
-                        />
-                     <path
-                        d="M34.2343 27.2891L31.9922 21.3828C31.8828 21.0547 31.6093 20.7812 31.2812 20.6719C30.9531 20.5625 30.625 20.5078 30.2968 20.6719L24.2812 22.9687C23.789 23.1328 23.5156 23.7344 23.7343 24.2266C23.8984 24.7187 24.5 24.9922 24.9922 24.7734L28.7109 23.3516C26.6328 27.6719 22.2031 30.5156 17.1718 30.5156C11.6484 30.5156 6.78122 27.0703 5.0859 21.9297C4.86715 21.4375 4.32028 21.1641 3.82809 21.3281C3.3359 21.4922 3.06247 22.0391 3.22653 22.5312C5.19528 28.4375 10.7734 32.4297 17.1172 32.4297C23.1328 32.4297 28.4922 28.875 30.6797 23.4609L32.4297 28C32.5937 28.3828 32.9218 28.6016 33.3047 28.6016C33.414 28.6016 33.5234 28.6016 33.6328 28.5469C34.1797 28.3281 34.4531 27.7813 34.2343 27.2891Z"
-                        fill="white"
-                        />
-                  </svg>
-               </div>
-               <h4 class="font-semibold text-xl text-dark mb-3">
-                Specialty Item Moving
-               </h4>
-               <p class="text-body-color">
-                Careful handling and transport of pianos, antiques, and other delicate or heavy items.
-               </p>
+                  ">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.04684 15.5859C4.2109 15.5859 4.37497 15.5859 4.48434 15.5313L10.5547 13.3984C11.0468 13.2344 11.3203 12.6875 11.1562 12.1953C10.9922 11.7031 10.4453 11.4297 9.95309 11.5938L6.28903 12.9063C8.09372 7.92969 12.8515 4.53906 18.375 4.53906C24.2265 4.53906 29.3672 8.42188 30.789 14.0547C30.8984 14.5469 31.4453 14.875 31.9375 14.7656C32.4297 14.6563 32.7578 14.1094 32.6484 13.6172C31.0078 7.16406 25.1015 2.67969 18.375 2.67969C11.8125 2.67969 6.12497 6.89063 4.26559 13.0156L2.57028 8.25781C2.40622 7.76563 1.85934 7.49219 1.36715 7.65625C0.874967 7.82031 0.60153 8.36719 0.765592 8.85938L2.84372 14.8203C3.00778 15.2578 3.55465 15.5859 4.04684 15.5859Z"
+                  fill="white" />
+                <path
+                  d="M34.2343 27.2891L31.9922 21.3828C31.8828 21.0547 31.6093 20.7812 31.2812 20.6719C30.9531 20.5625 30.625 20.5078 30.2968 20.6719L24.2812 22.9687C23.789 23.1328 23.5156 23.7344 23.7343 24.2266C23.8984 24.7187 24.5 24.9922 24.9922 24.7734L28.7109 23.3516C26.6328 27.6719 22.2031 30.5156 17.1718 30.5156C11.6484 30.5156 6.78122 27.0703 5.0859 21.9297C4.86715 21.4375 4.32028 21.1641 3.82809 21.3281C3.3359 21.4922 3.06247 22.0391 3.22653 22.5312C5.19528 28.4375 10.7734 32.4297 17.1172 32.4297C23.1328 32.4297 28.4922 28.875 30.6797 23.4609L32.4297 28C32.5937 28.3828 32.9218 28.6016 33.3047 28.6016C33.414 28.6016 33.5234 28.6016 33.6328 28.5469C34.1797 28.3281 34.4531 27.7813 34.2343 27.2891Z"
+                  fill="white" />
+              </svg>
             </div>
-         </div>
+            <h4 class="font-semibold text-xl text-dark mb-3">
+              Specialty Item Moving
+            </h4>
+            <p class="text-body-color">
+              Careful handling and transport of pianos, antiques, and other delicate or heavy items.
+            </p>
+          </div>
+        </div>
       </div>
-   </div>
-</section>
-<!-- ====== Services Section End -->
+    </div>
+  </section>
+  <!-- ====== Services Section End -->
   <section
     class=" box relative w-full bg-[url('./assest/worker-loading.jpeg')]  bg-cover bg-center bg-no-repeat py-12 md:py-24 lg:py-32">
     <div class="absolute inset-0  bg-black/70"></div>
@@ -609,10 +584,10 @@
   
     This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
   -->
-  
-  
 
-  
+
+
+
   <section class="box bg-orange-100">
     <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
@@ -620,284 +595,173 @@
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Don't just take our word for it...
           </h2>
-  
+
           <p class="mt-4 text-gray-700">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas veritatis illo placeat
             harum porro optio fugit a culpa sunt id!
           </p>
-  
+
           <div class="hidden lg:mt-8 lg:flex lg:gap-4">
-            <button
-              aria-label="Previous slide"
-              id="keen-slider-previous-desktop"
-              class="rounded-full border border-orange-500 p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5 rtl:rotate-180"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
+            <button aria-label="Previous slide" id="keen-slider-previous-desktop"
+              class="rounded-full border border-orange-500 p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 rtl:rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
               </svg>
             </button>
-  
-            <button
-              aria-label="Next slide"
-              id="keen-slider-next-desktop"
-              class="rounded-full border border-orange-500 p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white"
-            >
-              <svg
-                class="size-5 rtl:rotate-180"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 5l7 7-7 7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
+
+            <button aria-label="Next slide" id="keen-slider-next-desktop"
+              class="rounded-full border border-orange-500 p-3 text-orange-500 transition hover:bg-orange-500 hover:text-white">
+              <svg class="size-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
               </svg>
             </button>
           </div>
         </div>
-  
+
         <div class="-mx-6 lg:col-span-2 lg:mx-0">
           <div id="keen-slider" class="keen-slider">
             <div class="keen-slider__slide">
               <blockquote
-                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12"
-              >
-                <div >
+                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12">
+                <div>
                   <div class="flex gap-0.5 text-orange-500">
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </div>
-  
+
                   <div class="mt-4">
-                  
-  
+
+
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      UTC Movers and Packers made our relocation a breeze! Their team was punctual, efficient, and handled our belongings with utmost care. From packing delicate items to safely transporting furniture, they ensured everything reached our new home intact. Highly recommend their services!
+                      UTC Movers and Packers made our relocation a breeze! Their team was punctual, efficient, and
+                      handled our belongings with utmost care. From packing delicate items to safely transporting
+                      furniture, they ensured everything reached our new home intact. Highly recommend their services!
                     </p>
                   </div>
                 </div>
-  
+
                 <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                   &mdash; Rakesh Gupta
                 </footer>
               </blockquote>
             </div>
-  
+
             <div class="keen-slider__slide">
               <blockquote
-                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12"
-              >
+                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12">
                 <div>
                   <div class="flex gap-0.5 text-orange-500">
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </div>
-  
+
                   <div class="mt-4">
-                  
-  
+
+
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      I couldn't be happier with UTC Movers and Packers! They provided excellent service from start to finish. Their staff was professional, courteous, and worked tirelessly to ensure our move went smoothly. Thanks to them, we settled into our new home without any hassle. Definitely the best in the business!" 
+                      I couldn't be happier with UTC Movers and Packers! They provided excellent service from start to
+                      finish. Their staff was professional, courteous, and worked tirelessly to ensure our move went
+                      smoothly. Thanks to them, we settled into our new home without any hassle. Definitely the best in
+                      the business!"
                     </p>
                   </div>
                 </div>
-  
+
                 <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                   &mdash; Rajveer Chauhan
                 </footer>
               </blockquote>
             </div>
-  
+
             <div class="keen-slider__slide">
               <blockquote
-                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12"
-              >
+                class="flex h-full flex-col justify-between rounded-lg  bg-white p-6 shadow-lg sm:p-8 lg:p-12">
                 <div>
                   <div class="flex gap-0.5 text-orange-500">
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-  
-                    <svg
-                      class="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </div>
-  
+
                   <div class="mt-4">
-                  
-  
+
+
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      Choosing UTC Movers and Packers was the best decision we made for our relocation. Their team demonstrated exceptional expertise in packing and handling our belongings. They went above and beyond to accommodate our needs and delivered everything on time. Truly impressed with their professionalism and reliability!
+                      Choosing UTC Movers and Packers was the best decision we made for our relocation. Their team
+                      demonstrated exceptional expertise in packing and handling our belongings. They went above and
+                      beyond to accommodate our needs and delivered everything on time. Truly impressed with their
+                      professionalism and reliability!
                     </p>
                   </div>
                 </div>
-  
+
                 <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                   &mdash; Ankit Sharma
                 </footer>
@@ -906,36 +770,19 @@
           </div>
         </div>
       </div>
-  
+
       <div class="mt-8 flex justify-center gap-4 lg:hidden">
-        <button
-          aria-label="Previous slide"
-          id="keen-slider-previous"
-          class="rounded-full border border-orange-600 p-4 text--600 transition hover:bg-orange-600 hover:text-white"
-        >
-          <svg
-            class="size-5 -rotate-180 transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <button aria-label="Previous slide" id="keen-slider-previous"
+          class="rounded-full border border-orange-600 p-4 text--600 transition hover:bg-orange-600 hover:text-white">
+          <svg class="size-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
             <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
           </svg>
         </button>
-  
-        <button
-          aria-label="Next slide"
-          id="keen-slider-next"
-          class="rounded-full border border-orange-600 p-4 text-rose-600 transition hover:bg-orange-600 hover:text-white"
-        >
-          <svg
-            class="h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+
+        <button aria-label="Next slide" id="keen-slider-next"
+          class="rounded-full border border-orange-600 p-4 text-rose-600 transition hover:bg-orange-600 hover:text-white">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
           </svg>
         </button>

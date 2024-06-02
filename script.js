@@ -84,3 +84,32 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.add('opacity-0', 'pointer-events-none');
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButtons = document.querySelectorAll('[data-collapse-toggle]');
+  toggleButtons.forEach(button => {
+    const targetId = button.getAttribute('data-collapse-toggle');
+    const targetElement = document.getElementById(targetId);
+
+    button.addEventListener('click', () => {
+      if (targetElement.classList.contains('hidden')) {
+        targetElement.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+      } else {
+        targetElement.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+

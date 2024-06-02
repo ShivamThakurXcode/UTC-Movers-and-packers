@@ -107,6 +107,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// carousel.js
+document.addEventListener('DOMContentLoaded', () => {
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  const showNextSlide = () => {
+      // Hide the current slide
+      carouselItems[currentIndex].classList.remove('active');
+
+      // Move to the next slide
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+
+      // Show the new slide
+      carouselItems[currentIndex].classList.add('active');
+  };
+
+  // Set the interval for automatic sliding
+  setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+});
+
 
 
 

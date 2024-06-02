@@ -56,18 +56,18 @@
   <!-- main container for whole page  -->
 
 
-  <div class="bg-white rounded-md  w-full h-full overflow-y-hidden">
+  <div class="bg-white rounded-md  w-full h-full overflow-x-hidden">
 
 
 
-    <main>
+    <main class="overflow-x-hidden">
 
 
 
 
       <!-- home container  -->
-      <section id="bgimage"
-        class="  bg-[url('./assest/main.jpg')] bg-center bg-fixed bg-cover text-white h-screen min-w-fit bg-no-repeat object-contain  ral py-2">
+      <section  id="bgimage"
+        class=" overflow-x-hidden  bg-[url('./assest/main.jpg')] bg-center bg-fixed bg-cover text-white h-screen min-w-fit bg-no-repeat object-contain  ralative py-2">
 
 
 
@@ -75,12 +75,12 @@
 
 
 
-        <header id="header" class="bg-transparent sticky   top-0 border-b-2 border-white w-11/12 mx-auto">
+        <header id="header" class=" sticky bg-transparent  top-0 border-b-2 border-white w-11/12 mx-auto">
 
 
           <nav class="bg-transparent border-gray-200 ">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-              <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="assest/white logo.png" class="h-8" alt="UTC Logo" />
 
               </a>
@@ -88,12 +88,12 @@
 
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
                   aria-expanded="false"
-                  class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                  class="md:hidden text-white  hover:bg-orange-500 focus:outline-none focus:ring-1 focus:ring-gray-200  rounded-lg text-sm p-2.5 me-1">
                   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 1h15M1 7h15M1 13h15" />
+                  </svg>
                   <span class="sr-only">Search</span>
                 </button>
 
@@ -108,18 +108,10 @@
                     <span class="sr-only">Search icon</span>
                   </div>
                   <input type="text" id="search-navbar"
-                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50/5 focus:ring-orange-500 focus:border-orange-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg  focus:ring-orange-500 focus:border-orange-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="Search...">
                 </div>
 
-
-
-                <button data-collapse-toggle="navbar-search" type="button"
-                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                  aria-controls="navbar-search" aria-expanded="false">
-                  <span class="sr-only">Open main menu</span>
-                
-                </button>
 
 
 
@@ -134,31 +126,32 @@
                     </svg>
                   </div>
                   <input type="text" id="search-navbar"
-                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-200 focus:ring-orange-500 focus:border-orange-500   dark:placeholder-gray-400 dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="Search...">
                 </div>
                 <ul
                   class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 lg:scal md:border-0  ">
                   <li>
-                    <a href="#"
-                      class="block py-2 px-3 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-500"
+                    <a href="#home" data-nav-link
+                      class="block active py-2 px-3 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-500"
                       aria-current="page">Home</a>
                   </li>
                   <li>
-                    <a href="#"
-                      class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
+                    <a href="#about" data-nav-link
+                      class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                      Us</a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="#Service" data-nav-link
                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="utc-blog.html" data-nav-link
                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
                   </li>
                   <li>
-                    <a href="#"
-                      class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    <a href="#quote" data-nav-link
+                      class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Quote</a>
                   </li>
                 </ul>
               </div>
@@ -179,10 +172,10 @@
 
 
 
-        <div id="main-title" class=" container mx-auto grid lg:grid-cols-2 grid-cols-1    gap-8">
-          <div class=" space-y-4 mt-20 ml-20 scale-100 " id="heading">
+        <div id="main-title" data-page="home" class="  container  mx-auto grid lg:grid-cols-2 grid-cols-1  lg:scale-100 scale-80  gap-8">
+          <div class=" lg:text-left text-center space-y-4 mt-20 ml-20 lg:scale-100 lg:opacity-100 lg:bg-opacity-100 bg-opacity-20  opacity-100" id="heading">
             <h1 class="text-1xl font-mono leading-none m-0"><span class="opacity-50">WELCOME</span><span
-                class="text-orange-400 text-1xl font-bold"> UTC-Movers & Packers</span></h2>
+                class="text-orange-400  text-1xl font-bold"> UTC-Movers & Packers</span></h2>
               <h1 class="text-4xl font-bold leading-tight">
                 <span class="opacity-75">YOUR TRUSTED</span><br>
                 <span class="text-5xl"> <span class="text-orange-400">PARTNER</span> IN</span> <br>
@@ -190,27 +183,32 @@
                 <span class="opacity-50"> RELOCATION</span>
               </h1>
 
-              <p class=" title-p text-lg opacity-60 ">AT UTC - MOVERS & PACKERS, WE EXCEL IN <br>
+              <p class=" title-p text-lg opacity-60 min-sm:text-sm ">AT UTC - MOVERS & PACKERS, WE EXCEL IN <br>
                 SEAMLESS LOGISTCIS, EXPERT LOADING, AND <br>
                 METICULOUS PACKING.</p>
               <div id="title-button" class="flex  ">
                 <button id="openModalButton" for="tw-modal" class=" contact  items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-danger-foreground hover:bg-primary/90 h-10 px-4 py-1 w-28 border-2
-                          flex justify-around">CALL
+                 hover:bg-orange-400 hover:transition-all   hover:px-8    flex justify-around">CALL
                   <i class="ri-phone-line scale-150 "></i></button>
                 <button
-                  class="  bg-orange-400 inline-flex items-center justify-around whitespace-nowrap rounded-md text-sm  font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 mx-8 px-4 py-1 w-48">BOOKING
+                  class=" hover:transition-all   bg-orange-400 inline-flex items-center justify-around whitespace-nowrap rounded-md text-sm  font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 mx-8 hover:px-8 hover:backdrop:blur-lg backdrop:blur-md border-2 px-4 py-1 w-48">BOOKING
                   <i class="ri-shopping-cart-line scale-150"></i></button>
               </div>
 
           </div>
         </div>
-        <div class="w-20 h-screen flex justify-center flex-col   absolute top-0 right-0 ">
-          <div class="social flex mx-auto gap-2  scale-125 flex-col">
+        <div
+          class=" w-full  lg:h-full absolute mt-8 flex  lg:flex-col  align-middle justify-center  mx-auto  lg:w-20 lg:absolute lg:top-0 lg:right-0 ">
+          <div class="social w-full lg:w-20 lg:align-middle mx-14 flex  gap-2  scale-125 lg:flex-col justify-around lg:justify-center  h-6 align-middle  ">
 
-            <a href="#"><i class="ri-whatsapp-line"></i></a>
-            <a href="#"><i class="ri-facebook-circle-line"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"> <i class="ri-twitter-x-line"></i></a>
+            <a href="#"><i
+                class="ri-whatsapp-line  hover:font-bold hover:text-orange-400 hover:text-xl hover:transition-all" "></i></a>
+            <a href=" #"><i
+                  class="ri-facebook-circle-line hover:font-bold hover:text-orange-400 hover:text-xl hover:transition-all"></i></a>
+            <a href="#"><i
+                class="ri-instagram-line hover:font-bold hover:text-orange-400 hover:text-xl hover:transition-all"></i></a>
+            <a href="#"> <i
+                class="ri-twitter-x-line hover:font-bold hover:text-orange-400 hover:text-xl hover:transition-all"></i></a>
 
 
           </div>
@@ -229,16 +227,12 @@
 
 
 
-  <section class="box bg-orange-50 ">
 
-
-
-
-  </section>
 
   <!-- about section  -->
 
-  <section class="box bg-orange-50 ">
+  <section id="about" class="box bg-orange-50 ">
+    <a href="#about"></a>
     <div class="container px-6 py-10 mx-auto">
       <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl ">about us<br> awesome <span
           class="underline decoration-orange-500">Components</span></h1>
@@ -334,7 +328,7 @@
 
 
   <!-- ====== Services Section Start -->
-  <section class="box pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
+  <section id="Service" class="box pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
     <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4">
@@ -505,8 +499,12 @@
       </div>
     </div>
   </section>
-  <!-- ====== Services Section End -->
-  <section
+
+
+
+
+
+  <section id="quote"
     class=" box relative w-full bg-[url('./assest/worker-loading.jpeg')]  bg-cover bg-center bg-no-repeat py-12 md:py-24 lg:py-32">
     <div class="absolute inset-0  bg-black/70"></div>
     <div class="container relative z-10 grid gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6 lg:gap-16">
@@ -821,16 +819,20 @@
       </div>
     </div>
   </section>
-  <section class="bg-[#f3f4f6] py-16">
-    <div class="container mx-auto">
-
-
-
-
-
-
-    </div>
-    </div>
+  <section class="bg-[#f3f4f6] px-10 py-16">
+    
+      <div id="carousel" class="relative w-[90%] mx-auto  h-[80vh] overflow-hidden rounded-lg shadow-lg">
+          <div class="carousel-item active w-full h-full">
+              <img src="assest/worker-loading.jpeg" alt="Slide 1" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item w-full h-full">
+              <img src="assest/car-loading.jpeg" alt="Slide 2" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item w-full h-full">
+              <img src="assest/packing-loading.jpeg" alt="Slide 3" class="w-full h-full object-cover">
+          </div>
+      </div>
+ 
   </section>
   <footer class="bg-orange-500 text-white">
     <div class="container mx-auto grid grid-cols-3 gap-8 py-8">

@@ -67,3 +67,27 @@ testimonals
 5. "UTC Movers and Packers exceeded our expectations in every aspect. Their team was not only efficient but also incredibly friendly and helpful throughout the entire process. They handled our belongings with care as if it were their own. We couldn't have asked for a better moving experience. Kudos to their exceptional team!" - Rohan Gupta
 
 6. "Hats off to UTC Movers and Packers for their exceptional service! They took the stress out of our move with their professionalism and expertise. From packing fragile items to loading and unloading heavy furniture, they managed everything seamlessly. If you're looking for a reliable moving company, look no further than UTC Movers and Packers!" - Aarti Desai
+
+
+
+
+
+
+        <header id="header" class="bg-[#f3f4f600] sticky   top-0 border-b-2 border-white w-11/12 mx-auto">
+          <div class="container  mx-auto flex items-center justify-between py-1">
+            <div class="flex items-center space-x-4">
+              <img src="assest/white logo.png" alt="logo" class="h-10">
+
+            </div>
+            <nav class=" navbar flex space-x-4">
+            <a class="text-sm font-semibold text-[#ffffff]" href="#">HOME</a>
+            <a class="text-sm text-nowrap font-semibold text-[#fcfcfc]" href="#">ABOUT US</a>
+            <a class="text-sm font-semibold text-[#f8f8f8]" href="#">SERVICES</a>
+            <a class="text-sm font-semibold text-[#ffffff]" href="#">CONTACT</a>
+            </nav>
+            <div class="rounded-lg overflow-hidden focus:no-underline flex px-3 flex-nowrap border w-max bg-white/25">
+              <input type="text" class="bg-transparent shrink px-2  " placeholder="Search"><i
+                class="ri-search-2-line"></i>
+            </div>
+          </div>
+        </header>

@@ -1,0 +1,13 @@
+{
+  "name": "utc-tailwind",
+  "version": "1.0.0",
+  "description": "A logistics Website that provide Movers and Packers Service.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -47,6 +47,7 @@ const observer = new IntersectionObserver((entries) =>{
       entry.target.classList.remove('show')
     }
 
+
  
   });
 });
@@ -131,4 +132,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Form Data Handling
+document.getElementById('logisticsForm').onsubmit = function(event) {
+  event.preventDefault();
+  var formData = new FormData(document.getElementById('logisticsForm'));
+  fetch(CONFIG.DEPLOYMENT_URL, {
+      method: 'POST',
+      body: formData
+  }).then(response => response.text())
+    .then(data => alert(data))
+    .catch(error => console.error('Error!', error.message));
+}
 
+
+
+// logic for search bar 
+function highlightText(searchTerm) {
+  const regex = new RegExp(`(${searchTerm})`, 'gi');
+  const paragraphs = document.querySelectorAll(body);
+
+  paragraphs.forEach(paragraph => {
+      paragraph.innerHTML = paragraph.textContent.replace(regex, '<span class="highlight">$1</span>');
+  });
+}
+
+document.getElementById('searchButton').addEventListener('click', function() {
+  const query = document.getElementById('searchInput').value.trim();
+  if (query) {
+      highlightText(query);
+  }
+});
+
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+      const query = document.getElementById('searchInput').value.trim();
+      if (query) {
+          highlightText(query);
+      }
+  }
+});

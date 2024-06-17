@@ -20,13 +20,13 @@
 
 </head>
 
-<body>
+<body class="p-0 m-0 w-screen lg:w-screen overflow-x-hidden bg-black  box-border">
 
   <!-- Modal -->
   <div id="modal"
-    class="modal text-center fixed inset-0 z-10 flex items-center justify-center bg-orange-900 bg-opacity-70 opacity-0 pointer-events-none">
+    class="modal  text-center fixed inset-0 z-10 flex items-center justify-center bg-orange-900 bg-opacity-70 opacity-0 pointer-events-none">
     <div
-      class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all ease-in duration-100 max-w-lg w-full">
+      class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all ease-in  duration-100 max-w-lg w-full">
       <div class="p-6">
         <h2 class="text-xl font-semibold mb-4">CONTACT TO UTC</h2>
         <div class="grid grid-cols-2 grid-rows-1">
@@ -56,18 +56,18 @@
   <!-- main container for whole page  -->
 
 
-  <div class="bg-white rounded-md  w-full h-full overflow-x-hidden">
+  <div class="  rounded-md overflow-x-hidden w-screen h-full m-0">
 
 
 
-    <main class="overflow-x-hidden">
+    <main class="w-screen ">
 
 
 
 
       <!-- home container  -->
-      <section  id="bgimage"
-        class=" overflow-x-hidden  bg-[url('./assest/main.jpg')] bg-center bg-fixed bg-cover text-white h-screen min-w-fit bg-no-repeat object-contain  ralative py-2">
+      <section id="bgimage"
+        class=" overflow-x-hidden  bg-[url('./assest/main.jpg')] bg-center bg-fixed bg-cover text-white lg:h-screen h-full min-w-fit bg-no-repeat object-contain  ralative py-2">
 
 
 
@@ -108,7 +108,7 @@
                     <span class="sr-only">Search icon</span>
                   </div>
                   <input type="text" id="search-navbar"
-                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg  focus:ring-orange-500 focus:border-orange-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                    class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg  focus:ring-orange-500 focus:border-orange-500  dark:border-gray-600 dark:placeholder-black dark:text-black dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="Search...">
                 </div>
 
@@ -119,15 +119,18 @@
               <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
                 <div class="relative mt-3 md:hidden">
                   <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                     <button class="cursor-pointer">
+                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                     </svg>
+                  </button>
                   </div>
-                  <input type="text" id="search-navbar"
+                  <input type="text" id="searchInput"
                     class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-200 focus:ring-orange-500 focus:border-orange-500   dark:placeholder-gray-400 dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     placeholder="Search...">
+                    
                 </div>
                 <ul
                   class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 lg:scal md:border-0  ">
@@ -172,8 +175,11 @@
 
 
 
-        <div id="main-title" data-page="home" class="  container  mx-auto grid lg:grid-cols-2 grid-cols-1  lg:scale-100 scale-80  gap-8">
-          <div class=" lg:text-left text-center space-y-4 mt-20 ml-20 lg:scale-100 lg:opacity-100 lg:bg-opacity-100 bg-opacity-20  opacity-100" id="heading">
+        <div id="main-title" data-page="home"
+          class="  container  mx-auto grid lg:grid-cols-2 grid-cols-1  lg:scale-100 scale-80  gap-8">
+          <div
+            class=" lg:text-left text-center space-y-4 mt-20 ml-20 lg:scale-100 lg:opacity-100 lg:bg-opacity-100 bg-opacity-20  opacity-100"
+            id="heading">
             <h1 class="text-1xl font-mono leading-none m-0"><span class="opacity-50">WELCOME</span><span
                 class="text-orange-400  text-1xl font-bold"> UTC-Movers & Packers</span></h2>
               <h1 class="text-4xl font-bold leading-tight">
@@ -190,16 +196,17 @@
                 <button id="openModalButton" for="tw-modal" class=" contact  items-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-danger-foreground hover:bg-primary/90 h-10 px-4 py-1 w-28 border-2
                  hover:bg-orange-400 hover:transition-all   hover:px-8    flex justify-around">CALL
                   <i class="ri-phone-line scale-150 "></i></button>
-                <button
+              <a href="#qoute">  <button
                   class=" hover:transition-all   bg-orange-400 inline-flex items-center justify-around whitespace-nowrap rounded-md text-sm  font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 mx-8 hover:px-8 hover:backdrop:blur-lg backdrop:blur-md border-2 px-4 py-1 w-48">BOOKING
-                  <i class="ri-shopping-cart-line scale-150"></i></button>
+                  <i class="ri-shopping-cart-line scale-150"></i></button></a>
               </div>
 
           </div>
         </div>
         <div
-          class=" w-full  lg:h-full absolute mt-8 flex  lg:flex-col  align-middle justify-center  mx-auto  lg:w-20 lg:absolute lg:top-0 lg:right-0 ">
-          <div class="social w-full lg:w-20 lg:align-middle mx-14 flex  gap-2  scale-125 lg:flex-col justify-around lg:justify-center  h-6 align-middle  ">
+          class=" w-full  lg:h-full relative mt-8 flex  lg:flex-col  align-middle justify-center  mx-auto  lg:w-20 lg:absolute lg:top-0 lg:right-0 ">
+          <div
+            class="social w-full lg:w-20 lg:align-middle mx-14 flex  gap-2  scale-125 lg:flex-col justify-around lg:justify-center  h-6 align-middle  ">
 
             <a href="#"><i
                 class="ri-whatsapp-line  hover:font-bold hover:text-orange-400 hover:text-xl hover:transition-all" "></i></a>
@@ -213,13 +220,8 @@
 
           </div>
         </div>
-
-
   </div>
-
-
-
-  </section>
+</section>
 
 
 
@@ -231,58 +233,54 @@
 
   <!-- about section  -->
 
-  <section id="about" class="box bg-orange-50 ">
+  <section id="about" class=" bg-orange-50 ">
     <a href="#about"></a>
     <div class="container px-6 py-10 mx-auto">
-      <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl ">about us<br> awesome <span
-          class="underline decoration-orange-500">Components</span></h1>
+      <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl ">About UTC<br> Your Trusted <span
+          class="underline decoration-orange-500">Partner</span></h1>
 
       <p class="mt-4 text-gray-500 xl:mt-6 ">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+        At UTC Movers, we specialize in delivering comprehensive logistic solutions tailored to your unique needs. With a commitment to excellence and customer satisfaction, we ensure your cargo reaches its destination safely and on time.
       </p>
 
-      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-        <div class="p-8 space-y-3 border-2 border-orange-400 rounded-xl">
+      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-4">
+        <div class="box p-8 space-y-3 border-2 border-orange-400 rounded-xl">
           <span class="inline-block text-orange-500 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-            </svg>
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
           </span>
 
-          <h1 class="text-2xl font-semibold text-gray-700 capitalize ">elegant Dark Mode</h1>
+          <h1 class="text-2xl font-semibold text-gray-700 capitalize ">Our mission</h1>
 
           <p class="text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-            corrupti doloribus voluptatum eveniet
+            Our mission is to provide reliable, efficient, and innovative logistic services that exceed our clients' expectations. We aim to build long-term relationships based on trust and transparency.
           </p>
 
 
         </div>
 
-        <div class="p-8 space-y-3 border-2 border-orange-400  rounded-xl">
+        <div class="box p-8 space-y-3 border-2 border-orange-400  rounded-xl">
           <span class="inline-block text-orange-500 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-            </svg>
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
           </span>
 
-          <h1 class="text-2xl font-semibold text-gray-700 capitalize ">Easy to customiztions</h1>
+          <h1 class="text-2xl font-semibold text-gray-700 capitalize ">Expert Team</h1>
 
           <p class="text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-            corrupti doloribus voluptatum eveniet
+            Our team of logistics professionals brings years of industry experience and expertise. We are dedicated to offering personalized service and innovative solutions for every logistic challenge.
           </p>
 
 
         </div>
 
-        <div class="p-8 space-y-3 border-2 border-orange-400  rounded-xl">
+        <div class="box  p-8 space-y-3 border-2 border-orange-400  rounded-xl">
           <span class="inline-block text-orange-500 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -291,16 +289,15 @@
             </svg>
           </span>
 
-          <h1 class="text-2xl font-semibold text-gray-700 capitalize">Simple & clean designs</h1>
+          <h1 class="text-2xl font-semibold text-gray-700 capitalize">Advanced Service</h1>
 
           <p class="text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-            corrupti doloribus voluptatum eveniet
+            Utilizing the latest technology, we offer real-time tracking and seamless communication to ensure transparency and peace of mind throughout the transportation process.
           </p>
 
 
         </div>
-        <div class="p-8 space-y-3 border-2 border-orange-400  rounded-xl">
+        <div class="box p-8 space-y-3 border-2 border-orange-400  rounded-xl">
           <span class="inline-block text-orange-500 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -309,11 +306,10 @@
             </svg>
           </span>
 
-          <h1 class="text-2xl font-semibold text-gray-700 capitalize">Simple & clean designs</h1>
+          <h1 class="text-2xl font-semibold text-gray-700 capitalize">global network</h1>
 
           <p class="text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-            corrupti doloribus voluptatum eveniet
+            With an extensive global network, UTC Movers connects you to every corner of the India. Our partnerships with leading carriers ensure timely and efficient delivery across all continents.
           </p>
 
 
@@ -328,7 +324,7 @@
 
 
   <!-- ====== Services Section Start -->
-  <section id="Service" class="box pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
+  <section id="Service" class=" pt-20 bg-orange-100 lg:pt-[120px] pb-12 lg:pb-[90px]">
     <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4">
@@ -349,7 +345,7 @@
       </div>
       <div class="flex flex-wrap -mx-4">
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class=" p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
+          <div class="box p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
                ">
             <div class=" w-[70px] h-[70px] flex items-center justify-center bg-orange-400 rounded-2xl mb-8
                   ">
@@ -368,7 +364,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class=" p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
+          <div class="box p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
                ">
             <div class="  w-[70px]  h-[70px]  flex  items-center  justify-center  bg-orange-400  rounded-2xl  mb-8
                   ">
@@ -395,7 +391,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class="   p-10   md:px-7   xl:px-10   rounded-[20px]   bg-white   shadow-md   hover:shadow-lg   mb-8
+          <div class=" box  p-10   md:px-7   xl:px-10   rounded-[20px]   bg-white   shadow-md   hover:shadow-lg   mb-8
           ">
             <div class=" w-[70px] h-[70px] flex items-center justify-center bg-orange-400 rounded-2xl mb-8
              ">
@@ -414,7 +410,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class=" p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
+          <div class=" box p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
                ">
             <div class="  w-[70px]  h-[70px]  flex  items-center  justify-center  bg-orange-400  rounded-2xl  mb-8
                   ">
@@ -456,7 +452,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class=" p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
+          <div class=" box p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
                ">
             <div class="  w-[70px]  h-[70px]  flex  items-center  justify-center  bg-orange-400  rounded-2xl  mb-8
                   ">
@@ -475,7 +471,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-          <div class=" p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
+          <div class=" box p-10 md:px-7 xl:px-10 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8
                ">
             <div class="  w-[70px]  h-[70px]  flex  items-center  justify-center  bg-orange-400  rounded-2xl  mb-8
                   ">
@@ -505,96 +501,100 @@
 
 
   <section id="quote"
-    class=" box relative w-full bg-[url('./assest/worker-loading.jpeg')]  bg-cover bg-center bg-no-repeat py-12 md:py-24 lg:py-32">
+    class="  relative w-full bg-[url('./assest/worker-loading.jpeg')]  bg-cover bg-center bg-no-repeat py-12 md:py-24 lg:py-32">
     <div class="absolute inset-0  bg-black/70"></div>
     <div class="container relative z-10 grid gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6 lg:gap-16">
-      <div class="space-y-4">
+      <div class="space-y-4 ">
         <h1 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Get a Quote for Your Logistics Needs</h1>
         <p class="text-gray-300 md:text-lg">
           Fill out the form below to receive a personalized quote for your shipping, moving, or packing requirements.
         </p>
       </div>
-      <div class="rounded-lg border  text-card-foreground bg-white p-6 shadow-lg md:p-8" data-v0-t="card">
-        <form class="grid gap-4">
+      <div class="bg-white box gap-20 p-8 rounded-lg mx-auto shadow-md w-full max-w-3xl">
+        <h1 class="text-2xl font-bold ml-4  text-center">Fill Quote </h1>
+        <form id="logisticsForm" class="space-y-4">
+          <!-- Customer Information -->
           <div class="grid grid-cols-2 gap-4">
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="from">
-                Shipping From
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="from" placeholder="Enter address" />
+            <div>
+              <h2 class="text-xl font-semibold mb-2">Customer Information</h2>
+              <label for="fullName" class="block text-gray-700">Full Name</label>
+              <input type="text" id="fullName" name="fullName"
+                class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required>
             </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="to">
-                Shipping To
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="to" placeholder="Enter address" />
+            <div>
+              <h2 class="text-xl font-semibold mb-2">&nbsp;</h2>
+              <label for="contactNumber" class="block text-gray-700">Contact Number</label>
+              <input type="tel" id="contactNumber" name="contactNumber"
+                class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required>
             </div>
           </div>
-          <div class="space-y-2">
-            <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              for="description">
-              Item Description
-            </label>
-            <textarea
-              class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              id="description" placeholder="Describe the items"></textarea>
-          </div>
-          <div class="grid grid-cols-3 gap-4">
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="weight">
-                Weight
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="weight" placeholder="Enter weight" type="number" />
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="length">
-                Length
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="length" placeholder="Enter length" type="number" />
-            </div>
-            <div class="space-y-2">
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="width">
-                Width
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="width" placeholder="Enter width" type="number" />
+
+          <!-- Addresses -->
+          <div>
+            <h2 class="text-xl font-semibold mb-2 mt-6">Addresses</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="pickupAddress" class="block text-gray-700">Pickup Address</label>
+                <textarea id="pickupAddress" name="pickupAddress"
+                  class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required></textarea>
+              </div>
+              <div>
+                <label for="deliveryAddress" class="block text-gray-700">Delivery Address</label>
+                <textarea id="deliveryAddress" name="deliveryAddress"
+                  class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required></textarea>
+              </div>
             </div>
           </div>
-          <div class="space-y-2">
-            <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              for="height">
-              Height
-            </label>
-            <input
-              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              id="height" placeholder="Enter height" type="number" />
+
+          <!-- Shipment Information -->
+          <div>
+            <h2 class="text-xl font-semibold mb-2 mt-6">Shipment Information</h2>
+            <label for="shipmentDescription" class="block text-gray-700">Shipment Description</label>
+            <textarea id="shipmentDescription" name="shipmentDescription"
+              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required></textarea>
+
+
           </div>
-          <button
-            class="inline-flex  border items-center  hover:bg-orange-500 ease-in duration-500 justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-            type="submit">
-            Get Quote
-          </button>
+
+          <!-- Service Information -->
+          <div>
+            <h2 class="text-xl font-semibold mb-2 mt-6">Service Information</h2>
+            <label for="serviceType" class="block text-gray-700">Service Type</label>
+            <select id="serviceType" name="serviceType"
+              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required>
+              <option value="Vehicle">Vehicle Shipping</option>
+              <option value="Residential">Residential Shipping</option>
+              <option value="Commercial">Commercial Shipping</option>
+              <option value="Special-Item">Special Item Shipping</option>
+            </select>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="pickupDateTime" class="block text-gray-700 mt-4">Pickup Date </label>
+                <input type="date" id="pickupDateTime" name="pickupDateTime"
+                  class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required>
+              </div>
+              <div>
+                <label for="deliveryDateTime" class="block text-gray-700 mt-4">Delivery Date </label>
+                <input type="date" id="deliveryDateTime" name="deliveryDateTime"
+                  class="mt-1 block w-full border border-gray-300 rounded py-2 px-3" required>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <input type="submit" id="submit" value="Submit"
+              class="w-full bg-orange-400 text-white py-2 px-4 rounded cursor-pointer hover:bg-orange-500 mt-6">
+          </div>
         </form>
       </div>
+
+
+
     </div>
   </section>
 
 
-  <section class="box bg-orange-100">
+  <section class=" bg-orange-100">
     <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
         <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -803,36 +803,21 @@
 
 
 
-  <section class="container mx-auto py-16">
-    <h2 class="text-3xl font-bold text-center">What We Provide</h2>
-    <div class="mt-8 grid grid-cols-4 gap-8">
-      <div class="flex flex-col items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" class="mb-4 h-12 w-12">
-          <path
-            d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z">
-          </path>
-          <path d="m3.3 7 8.7 5 8.7-5"></path>
-          <path d="M12 22V12"></path>
-        </svg>
-        <h3 class="font-semibold">Loading</h3>
+
+  <section class="bg-orange-50 px-10 py-16">
+
+    <div id="carousel" class="relative w-[90%] mx-auto  h-[80vh] overflow-hidden rounded-lg shadow-lg">
+      <div class="carousel-item active w-full h-full">
+        <img src="assest/worker-loading.jpeg" alt="Slide 1" class="w-full h-full object-cover">
+      </div>
+      <div class="carousel-item w-full h-full">
+        <img src="assest/car-loading.jpeg" alt="Slide 2" class="w-full h-full object-cover">
+      </div>
+      <div class="carousel-item w-full h-full">
+        <img src="assest/packing-loading.jpeg" alt="Slide 3" class="w-full h-full object-cover">
       </div>
     </div>
-  </section>
-  <section class="bg-[#f3f4f6] px-10 py-16">
-    
-      <div id="carousel" class="relative w-[90%] mx-auto  h-[80vh] overflow-hidden rounded-lg shadow-lg">
-          <div class="carousel-item active w-full h-full">
-              <img src="assest/worker-loading.jpeg" alt="Slide 1" class="w-full h-full object-cover">
-          </div>
-          <div class="carousel-item w-full h-full">
-              <img src="assest/car-loading.jpeg" alt="Slide 2" class="w-full h-full object-cover">
-          </div>
-          <div class="carousel-item w-full h-full">
-              <img src="assest/packing-loading.jpeg" alt="Slide 3" class="w-full h-full object-cover">
-          </div>
-      </div>
- 
+
   </section>
   <footer class="bg-orange-500 text-white">
     <div class="container mx-auto grid grid-cols-3 gap-8 py-8">
@@ -852,7 +837,7 @@
     <div class="bg-[#0f172a] py-4">
       <div class="container mx-auto flex justify-between">
         <p class="text-sm">© 2024 All Rights Reserved. BY UTC</p>
-        <p class="text-sm">Developed by ShivamThakur</p>
+        <p class="text-sm">Developed by ShivamXcode</p>
         <div class="flex space-x-4"><a class="text-sm" href="#">Terms and conditions</a><a class="text-sm"
             href="#">Privacy policy</a></div>
       </div>

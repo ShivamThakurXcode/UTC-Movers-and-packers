@@ -5,9 +5,13 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-    
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npm run build:css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "localtunnel": "^2.0.2",
+    "react": "^18.3.1"
+  }
 }

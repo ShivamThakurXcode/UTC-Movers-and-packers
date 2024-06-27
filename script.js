@@ -142,6 +142,7 @@ document.getElementById('logisticsForm').onsubmit = function(event) {
   }).then(response => response.text())
     .then(data => alert(data))
     .catch(error => console.error('Error!', error.message));
+    
 }
 
 
